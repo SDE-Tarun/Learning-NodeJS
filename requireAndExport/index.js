@@ -52,6 +52,15 @@ console.log(Division);
 
 console.log(Division(4,2));
 
+// Require Directory
+
+const Folder = require('../requireDirectory');
+
+console.log(Folder);
+
+
+
+
 
 
 
