@@ -35,15 +35,28 @@ console.log(Addition.add(1,2));
 
 // NOTE - We can access file in the same folder without adding (dot) / . extention.
 
-const Multiplication = require('./file2');
+// const Multiplication = require('./file2');
 
-console.log(Multiplication);
+// console.log(Multiplication);
 
-console.log(Multiplication.Multiply);
+// console.log(Multiplication.Multiply);
 
-console.log(Multiplication.Multiply());
+// console.log(Multiplication.Multiply());
 
-console.log(Multiplication.Multiply(3,4));
+// console.log(Multiplication.Multiply(3,4));
+
+// Fourth Way -
+const Division = require('./file2');
+
+console.log(Division);
+
+console.log(Division(4,2));
+
+
+
+
+
+
 
 
 
