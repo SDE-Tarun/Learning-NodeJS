@@ -5,3 +5,4 @@ function multiply(a, b) {
 module.exports = {
     'Multiply': multiply
 }
+

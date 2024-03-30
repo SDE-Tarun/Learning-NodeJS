@@ -1,16 +1,37 @@
-const Addition  = require('./file1');
+const Addition = require('./file1');
 
 // Object we exported in our file that we are using in index.js
 console.log(Addition);
 
+// First Way -
 // [Function: add] - Defination of function/value of the key.
-console.log(Addition.Add);
+// console.log(Addition.Add);
 
+// Second Way -
+// console.log(Addition.add);
+
+// Third Way -
+console.log(Addition.add);
+
+// First Way -
 // NaN because we are not passing any parameters/arguments
 // console.log(Addition.Add());
 
+// Second Way -
+// console.log(Addition.add());
+
+// Third Way -
+console.log(Addition.add());
+
+// First Way -
 // Function calling here so that it is giving output.
-console.log(Addition.Add(1,2));
+// console.log(Addition.Add(1,2));
+
+// Second Way -
+// console.log(Addition.add(1,2));
+
+// Third Way -
+console.log(Addition.add(1,2));
 
 // NOTE - We can access file in the same folder without adding (dot) / . extention.
 
