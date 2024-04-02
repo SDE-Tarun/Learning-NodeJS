@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const path = require('path');
 
-let data = 'This is my updated newly fresh data';
+let data = 'This is my updated data';
 
 // fs gives an object having different function inside it which we can use -
 // console.log(fs);
@@ -30,7 +30,7 @@ fs.readFile(filePath, 'utf-8', (err,data)=>{
         console.log(err);
     }
     console.log(data);
- })
+})
 
 // data here is dummy data i.e let data = 'This is my updated newly fresh data'; 
 // writeFile(path of file, data which we want to update store it in variable, (callback function))
@@ -38,6 +38,11 @@ fs.readFile(filePath, 'utf-8', (err,data)=>{
 fs.writeFile(filePath, data, ()=>{
     console.log('File Written Successfully!!');
 });
+
+
+
+
+
 
 
 
