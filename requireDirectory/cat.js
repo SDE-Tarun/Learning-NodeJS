@@ -1,5 +1,5 @@
 function cat() {
-    console.log('Meow');
+  console.log("Meow");
 }
 
 module.exports = cat;

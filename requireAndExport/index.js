@@ -1,4 +1,4 @@
-const Addition = require('./file1');
+const Addition = require("./file1");
 
 // Object we exported in our file that we are using in index.js
 console.log(Addition);
@@ -31,7 +31,7 @@ console.log(Addition.add());
 // console.log(Addition.add(1,2));
 
 // Third Way -
-console.log(Addition.add(1,2));
+console.log(Addition.add(1, 2));
 
 // NOTE - We can access file in the same folder without adding (dot) / . extention.
 
@@ -46,37 +46,14 @@ console.log(Addition.add(1,2));
 // console.log(Multiplication.Multiply(3,4));
 
 // Fourth Way -
-const Division = require('./file2');
+const Division = require("./file2");
 
 console.log(Division);
 
-console.log(Division(4,2));
+console.log(Division(4, 2));
 
 // Require Directory
 
-const Folder = require('../requireDirectory');
+const Folder = require("../requireDirectory");
 
 console.log(Folder);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

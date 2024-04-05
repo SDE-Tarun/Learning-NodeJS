@@ -1,5 +1,5 @@
 function dog() {
-    console.log('Woof');
+  console.log("Woof");
 }
 
 module.exports = dog;

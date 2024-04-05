@@ -1,5 +1,5 @@
 function add(a, b) {
-    return a + b;
+  return a + b;
 }
 
 // 1. First way to use this file in index.js file
@@ -22,9 +22,8 @@ function add(a, b) {
 // }
 
 // 3. Third way to use this file in index.html
-// Here, we are adding a key directly to module.exports object 
+// Here, we are adding a key directly to module.exports object
 module.exports.add = add;
 
 // module.exports is an object
 // console.log(typeof module.exports);
-
