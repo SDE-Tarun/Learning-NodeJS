@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome To Users</h1>
+    <a href="/users/new">Create A New User</a>
+    <br>
+    <br>
+    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <% for(let user of users){ %>
+            <div style="border: 2px solid black; max-width: 300px; padding: 10px;">
+                <h4><%= user.firstName %></h4>
+                <p><%= user.role %></p>
+                <a href="/users/<%= user.id %>">Show User</a>
+                <br>
+                <a href="/users/<%= user.id %>/edit">Edit User</a>
+                <br>
+                <!-- <a href="/users/<%= user.id %>">Delete</a> -->
+                <form action="/users/<%= user.id %>?_method=DELETE" method="post">
+                    <button>Delete</button>
+                </form>
+            </div>
+        <% } %>
+    </div>
+    </div>
+</body>
+</html>
